@@ -2,7 +2,7 @@
 layout: single
 title: VirtualLab
 math: true
-permalink: /VirtualLab_Overview/
+permalink: /VirtualLab/Overview/
 sidebar: 
   nav:  "docs"
 ---
