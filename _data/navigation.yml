@@ -20,12 +20,12 @@ docs:
   - title: "VirtualLab"
     children:
       - title: "Overview"
-        url: /VirtualLab/Overview/
+        url: /VirtualLab/VirtualLab_Overview/
         
   - title: "SimPla"
     children:
       - title: "Overview"
-        url: /SimPla/Overview/
+        url: /SimPla/SimPla_Overview/
       - title: "Tokamak"
         url: /SimPla/Tokamak/
       - title: "Geometry"
@@ -34,13 +34,11 @@ docs:
         url: /SimPla/Equilibrium/
       - title: "Other Classes"
         url: /SimPla/Others/
-      - title: "MATLAB_edu"
-        url: /SimPla/SimPla_edu/
 
   - title: "SynDiag"
     children:
       - title: "Overview"
-        url: /SynDiag/Overview/
+        url: /SynDiag/SynDiag_Overview/
       - title: "Pick Up Coils"
         url: /SynDiag/PickUpCoils/
       - title: "Saddle Coils"
@@ -49,8 +47,7 @@ docs:
         url: /SynDiag/FluxLoops/
       - title: "Thomson Scattering"
         url: /SynDiag/ThomsonScattering/
-      - title: "MATLAB_edu"
-        url: /SynDiag/SynDiag_edu/
+
 
 
 
