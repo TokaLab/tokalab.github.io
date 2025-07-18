@@ -39,7 +39,7 @@ This class defines and solves the axisymmetric equilibrium of a tokamak, includi
 - **kin_prof**: Class for computing kinetic quantities like `ne`, `Te`, etc.
 
 #### Computed Fields
-- **psi**: Poloidal magnetic flux (Wb / 2π).
+- **psi**: Poloidal magnetic flux per unit toroidal angle  (Wb / rad).
 - **Psi**: Total poloidal magnetic flux (Wb).
 - **psi_n**: Normalised poloidal flux.
 
