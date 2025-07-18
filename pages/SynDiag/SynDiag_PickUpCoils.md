@@ -12,13 +12,13 @@ sidebar:
 </script>
 
 
-# `Diag_PickUpCoils` Class
+## Class:`Diag_PickUpCoils` 
 
 The `Diag_PickUpCoils` class simulates magnetic pick-up coil diagnostics, which are used to measure magnetic fields in tokamak devices. It interpolates magnetic fields from an `equilibrium` object and can simulate measurement noise for more realistic diagnostics.
 
 ---
 
-## Properties
+### Properties
 
 - **R**: Horizontal coordinate (in meters) of the coil position.
 - **Z**: Vertical coordinate (in meters) of the coil position.
@@ -30,9 +30,9 @@ The `Diag_PickUpCoils` class simulates magnetic pick-up coil diagnostics, which 
 
 ---
 
-## Methods
+### Methods
 
-### `measure(equi)`
+#### `measure(equi)`
 Computes the magnetic field measured by each pick-up coil.
 
 - Interpolates the magnetic field components (`Br`, `Bt`, `Bz`) from the equilibrium grid to the coil positions.
@@ -40,7 +40,7 @@ Computes the magnetic field measured by each pick-up coil.
 - Adds configurable random noise (both absolute and proportional) to simulate realistic diagnostics.
 - Stores both the noisy and ideal measurements.
 
-### `Upload(configuration)`
+#### `Upload(configuration)`
 Loads a predefined coil configuration.
 
 - If no argument is provided, default configuration `1` is used.
@@ -53,7 +53,8 @@ Loads a predefined coil configuration.
 
 ```matlab
 pickup = Diag_PickUpCoils();
-pickup = pickup.Upload();            % Load default configuration
-pickup = pickup.measure(equilibrium); % Simulate measurement
+pickup = pickup.Upload();               % Load default configuration
+pickup = pickup.measure(equilibrium);   % Simulate measurement
+```
 
 <p style="color:red;"><strong>⚠️ This documentation is still a work in progress. There may be errors or inaccuracies. Please feel free to contact us if you notice any issues.</strong></p>
