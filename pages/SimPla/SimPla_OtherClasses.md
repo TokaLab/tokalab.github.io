@@ -18,13 +18,13 @@ Below is a description of the additional class dependencies:
 
 ---
 
-### `constants`
+### **Class:** `constants`
 
 Defines fundamental physical constants used throughout the simulation. This class ensures consistency and avoids hardcoding values in multiple places.
 
 ---
 
-### `separatrix_target`
+### **Class:** `separatrix_target`
 
 Defines and constructs the target separatrix used in equilibrium reconstruction. It supports both file-based and parametric definitions and provides tools to identify grid points inside the separatrix and apply boundary operators.
 #### **Methods:**
@@ -45,7 +45,7 @@ Defines and constructs the target separatrix used in equilibrium reconstruction.
   
 ---
 
-### `toroidal_current`
+### **Class:** `toroidal_current`
 
 Handles the definition and computation of the toroidal current density profile (`Jt`). It supports both constant and profile-based methods, and normalizes the current to match the total plasma current (`I_p`).
 #### **Methods:**
@@ -60,7 +60,7 @@ Handles the definition and computation of the toroidal current density profile (
 
 ---
 
-### `profile_kinetic`
+### **Class:** `profile_kinetic`
 
 Computes kinetic plasma profiles such as density and temperature for electrons and ions. Profiles are evaluated based on normalized flux surfaces and configurable shaping parameters.
 
@@ -73,7 +73,7 @@ Computes kinetic plasma profiles such as density and temperature for electrons a
 
 ---
 
-### `profile_magnetic`
+### **Class:** `profile_magnetic`
 
 Evaluates magnetic pressure and poloidal current profiles from the Grad–Shafranov solution. Also provides methods to compute MHD fields such as \( B_r \), \( B_z \), \( J_r \), and \( J_z \) from the magnetic flux function.
 
@@ -89,7 +89,7 @@ Evaluates magnetic pressure and poloidal current profiles from the Grad–Shafra
     
   ---
 
-### `utilities`
+### **Class:** `utilities`
 
 Provides numerical tools used across the SimPla framework. Currently includes methods to generate finite-difference operators for spatial derivatives on the simulation grid.
 
