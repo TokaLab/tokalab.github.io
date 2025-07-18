@@ -46,14 +46,14 @@ Imports geometry-related data from a `tokamak` object.
 Constructs the 2D simulation grid based on provided dimensions and wall parameters.
 
 - Creates vectors `R` and `Z` for horizontal and vertical coordinates.
-- Builds the 2D mesh grid `(Rg, Zg)` and stores it.
+- Builds and stores the 2D mesh grid (`Rg`, `Zg`) .
 - Calculates grid spacing `dR`, `dZ`.
 
 #### `inside_wall()`
 
 Generates a logical mask of grid points located inside the wall polygon.
 
-- Uses MATLAB's `inpolygon()` function.
+- Uses MATLAB's `inpolygon()` built-in function.
 - Saves the result (`true`/`false` matrix) in `obj.wall.inside`.
 
 #### `geo_operator()`
@@ -64,6 +64,17 @@ Defines a sparse boundary operator matrix identifying grid points on the edge of
   - `M_boundary`: Sparse matrix acting on boundary indices.
   - `indices`: Linear indices of boundary points.
   - `ind_bool`: Boolean mask identifying boundary positions.
+
+### Plotting Methods
+
+#### `plot()`
+
+Plots the 2D grid points and the tokamak wall outline to visualize the full simulation domain.
+
+#### `plot_wall()`
+
+Plots only the tokamak wall shape. Useful for checking the wall geometry.
+
 
 ### Summary
 
