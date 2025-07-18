@@ -102,7 +102,7 @@ Post-processes the final solution:
 
 - Interpolates to high-resolution grid
 - Recomputes O/X-points
-- Re-normalizes `ψ` (`$ψ_n$`)
+- Re-normalizes `ψ` (`ψn`)
 - Identifies the Last Closed Flux Surface (LCFS)
 
 ---
