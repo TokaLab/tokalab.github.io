@@ -97,6 +97,6 @@ Provides numerical tools used across the SimPla framework. Currently includes me
   - `differential_operators(geo)`  
   Returns first and second-order finite-difference operators in both radial (R) and vertical (Z) directions. These operators can be applied to scalar fields using matrix multiplication.
 
-
+---
 
 <p style="color:red;"><strong>⚠️ This documentation is still a work in progress. There may be errors or inaccuracies. Please feel free to contact us if you notice any issues.</strong></p>
