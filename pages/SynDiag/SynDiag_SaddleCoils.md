@@ -50,5 +50,29 @@ Loads predefined coil configurations.
 
 ---
 
+### Plotting Methods
+
+#### `plot_geo()`
+
+Plots the spatial layout of the saddle coils as line segments connecting their endpoints.
+
+#### `plot_meas()`
+
+Plots the noisy flux difference measurements for each saddle coil.
+
+#### `plot_StandAlone()`
+
+Plots both the ideal and noisy flux difference measurements for comparison.
+
+---
+
+### Usage Example
+
+```matlab
+saddle = Diag_SaddleCoils();
+saddle = saddle.Upload();            % Load default configuration
+saddle = saddle.measure(equilibrium); % Simulate measurement
+saddle.plot_StandAlone();            % Visualize results
+```
 
 <p style="color:red;"><strong>⚠️ This documentation is still a work in progress. There may be errors or inaccuracies. Please feel free to contact us if you notice any issues.</strong></p>
