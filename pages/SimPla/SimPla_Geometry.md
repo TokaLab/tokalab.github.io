@@ -47,7 +47,7 @@ Constructs the 2D simulation grid based on provided dimensions and wall paramete
 
 - Creates vectors `R` and `Z` for horizontal and vertical coordinates.
 - Builds and stores the 2D mesh grid (`Rg`, `Zg`) .
-- Calculates grid spacing `dR`, `dZ`.
+- Computes grid spacing `dR`, `dZ`.
 
 #### `inside_wall()`
 
