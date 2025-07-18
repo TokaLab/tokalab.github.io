@@ -68,7 +68,7 @@ Plots both the ideal and noisy magnetic field measurements for comparison.
 ### Usage Example
 
 ```matlab
-pickup = Diag_PickUpCoils();
+pickup = Diag_PickUpCoils();            % Initialise PickUpCoils object
 pickup = pickup.Upload();               % Load default configuration
 pickup = pickup.measure(equilibrium);   % Simulate measurement
 pickup.plot_StandAlone();               % Visualize results
