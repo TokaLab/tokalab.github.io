@@ -55,7 +55,7 @@ This class defines and solves the axisymmetric equilibrium of a tokamak, includi
 
 #### Pressure and Magnetic Function
 - **p**: Plasma pressure.
-- **F2**: Squared poloidal current function (F² = R²·Bφ²).
+- **F2**: Squared poloidal current function (F² = R²·Bt²).
 
 #### Kinetic Profiles
 - **ne**, **ni**: Electron and ion densities.
@@ -102,7 +102,7 @@ Post-processes the final solution:
 
 - Interpolates to high-resolution grid
 - Recomputes O/X-points
-- Re-normalizes `ψ` (`ψ_n`)
+- Re-normalizes `ψ` (`$ψ_n$`)
 - Identifies the Last Closed Flux Surface (LCFS)
 
 ---
