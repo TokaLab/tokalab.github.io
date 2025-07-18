@@ -12,13 +12,13 @@ sidebar:
 </script>
 
 
-# `Diag_FluxLoops` Class
+## Class: `Diag_FluxLoops` 
 
 The `Diag_FluxLoops` class simulates measurements from flux loops, which are used in tokamak diagnostics to measure the local poloidal magnetic flux at specific locations within the vessel.
 
 ---
 
-## Properties
+### Properties
 
 - **R**, **Z**: Horizontal and vertical coordinates indicating the positions of the flux loops.
 - **psi**: Measured poloidal flux at the specified location, including simulated noise.
@@ -28,9 +28,9 @@ The `Diag_FluxLoops` class simulates measurements from flux loops, which are use
 
 ---
 
-## Methods
+### Methods
 
-### `measure(equi)`
+#### `measure(equi)`
 Simulates the measurement of the poloidal magnetic flux at specified coordinates.
 
 - Interpolates the magnetic flux (`psi`) from the equilibrium data at the defined diagnostic locations.
@@ -40,7 +40,7 @@ Simulates the measurement of the poloidal magnetic flux at specified coordinates
   - **Proportional noise**: Based on the magnitude of the signal, scaled accordingly.
 - The resulting noisy measurement is stored in `psi`.
 
-### `Upload(configuration)`
+#### `Upload(configuration)`
 Loads predefined positions and noise configurations for the flux loops.
 
 - If no configuration is provided, defaults to configuration `1`.
