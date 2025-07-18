@@ -12,16 +12,16 @@ sidebar:
 </script>
 
 
-# `Diag_SaddleCoils` Class
+## `Diag_SaddleCoils` Class
 
 The `Diag_SaddleCoils` class simulates magnetic flux measurements using saddle coils, which are placed at two different spatial locations. These diagnostics are commonly used in tokamaks to measure the difference in poloidal flux between two points.
 
 ---
 
-## Properties
+### Properties
 
-- **R1**, **Z1**: Horizontal and vertical coordinates of the first end of the saddle coil.
-- **R2**, **Z2**: Horizontal and vertical coordinates of the second end of the saddle coil.
+- **R1**, **Z1**: Horizontal and vertical coordinates (in meters) of the first end of the saddle coil.
+- **R2**, **Z2**: Horizontal and vertical coordinates (in meters) of the second end of the saddle coil.
 - **Dpsi**: Simulated flux difference measurement, including noise.
 - **ideal**: Structure containing the noise-free flux difference.
 - **unit**: Unit of measurement, typically `"Wb/rad"` (Weber per radian).
@@ -29,9 +29,9 @@ The `Diag_SaddleCoils` class simulates magnetic flux measurements using saddle c
 
 ---
 
-## Methods
+### Methods
 
-### `measure(equi)`
+#### `measure(equi)`
 Simulates the flux measurement between two points on the equilibrium flux surface.
 
 - Interpolates the poloidal flux (`psi`) at both ends of the coil using the equilibrium object.
@@ -41,7 +41,7 @@ Simulates the flux measurement between two points on the equilibrium flux surfac
   - Proportional noise scaled with respect to the magnitude of the ideal signal.
 - Stores both the ideal and noisy measurements.
 
-### `Upload(configuration)`
+#### `Upload(configuration)`
 Loads predefined coil configurations.
 
 - If no configuration index is given, defaults to configuration `1`.
@@ -50,11 +50,29 @@ Loads predefined coil configurations.
 
 ---
 
-## Usage Example
+### Plotting Methods
+
+#### `plot_geo()`
+
+Plots the spatial distribution of the flux loops in the poloidal plane.
+
+#### `plot_meas()`
+
+Plots the measured magnetic flux values for each loop.
+
+#### `plot_StandAlone()`
+
+Plots both the ideal and noisy magnetic flux measurements for comparison.
+
+---
+
+### Usage Example
 
 ```matlab
-saddle = Diag_SaddleCoils();
-saddle = saddle.Upload();            % Load default configuration
-saddle = saddle.measure(equilibrium); % Simulate measurement
+flux = Diag_FluxLoops();            % Initialise FluxLoops object
+flux = flux.Upload();               % Load default configuration
+flux = flux.measure(equilibrium);   % Simulate measurement
+flux.plot_StandAlone();             % Visualize results
+```
 
 <p style="color:red;"><strong>⚠️ This documentation is still a work in progress. There may be errors or inaccuracies. Please feel free to contact us if you notice any issues.</strong></p>
