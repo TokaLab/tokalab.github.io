@@ -12,7 +12,7 @@ sidebar:
 </script>
 
 
-## `Diag_SaddleCoils` Class
+## Class: `Diag_SaddleCoils` 
 
 The `Diag_SaddleCoils` class simulates magnetic flux measurements using saddle coils, which are placed at two different spatial locations. These diagnostics are commonly used in tokamaks to measure the difference in poloidal flux between two points.
 
