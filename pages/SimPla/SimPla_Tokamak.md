@@ -31,7 +31,7 @@ This class provides a structured way to store and access machine-specific parame
 
 ### Methods
 
-- **`machine_upload(machine_name)`**: Loads geometry and grid information based on the selected tokamak. If no input is provided, it defaults to `Tokalab`. nternally, this method uses a conditional structure that uploads the characteristics from a machine specific function. For example, if `Tokalab` is selected, the function `Tokalab_Geometry` is used. If you want to upload a new machine, you can copy and modify Tokalab_Geometry to change the geometric pieces of information to create your own tokamak.
+- **`machine_upload(machine_name)`**: Loads geometry and grid information based on the selected tokamak. If no input is provided, it defaults to `Tokalab`. Internally, this method uses a conditional structure that uploads the characteristics from a machine specific function. For example, if `Tokalab` is selected, the function `Tokalab_Geometry` is used. If you want to upload a new machine, you can copy and modify Tokalab_Geometry to change the geometric pieces of information to create your own tokamak.
   
 - **`scenario_upload()`**: Loads the equilibrium scenario (e.g., current profile, magnetic field, shape parameters) associated with the selected machine. Even this method uses a machine-specific function. For example, if `Tokalab` is selected, the function `Tokalab_Scenario` is used. This function takes  two numbers `separatrix` and `toroidal_current` as input, which are used to upload the parameters used to design the target separatrix and the method to evaluate the toroidal current given the equilibrium (see SimPla Equilibrium class and the method GSsolver). 
 
