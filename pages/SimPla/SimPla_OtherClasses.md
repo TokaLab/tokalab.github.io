@@ -11,7 +11,7 @@ sidebar:
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
 
-### Auxiliary Classes
+### Other Classes
 
 SimPla also uses additional classes defined in separate scripts. These are automatically loaded within the `equilibrium` class and are separated into different files to improve readability and modularity.
 
