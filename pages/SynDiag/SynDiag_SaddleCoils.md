@@ -50,29 +50,5 @@ Loads predefined coil configurations.
 
 ---
 
-### Plotting Methods
-
-#### `plot_geo()`
-
-Plots the spatial distribution of the flux loops in the poloidal plane.
-
-#### `plot_meas()`
-
-Plots the measured magnetic flux values for each loop.
-
-#### `plot_StandAlone()`
-
-Plots both the ideal and noisy magnetic flux measurements for comparison.
-
----
-
-### Usage Example
-
-```matlab
-flux = Diag_FluxLoops();            % Initialise FluxLoops object
-flux = flux.Upload();               % Load default configuration
-flux = flux.measure(equilibrium);   % Simulate measurement
-flux.plot_StandAlone();             % Visualize results
-```
 
 <p style="color:red;"><strong>⚠️ This documentation is still a work in progress. There may be errors or inaccuracies. Please feel free to contact us if you notice any issues.</strong></p>
