@@ -11,13 +11,13 @@ sidebar:
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
 
-# `Diag_ThomsonScattering` Class
+## Class:`Diag_ThomsonScattering` 
 
 The `Diag_ThomsonScattering` class simulates measurements obtained from a Thomson scattering diagnostic, which provides localized values of electron density (`ne`) and electron temperature (`Te`) within a plasma.
 
 ---
 
-## Properties
+### Properties
 
 - **R**, **Z**: Horizontal and vertical coordinates of the measurement points.
 - **ne**: Measured electron density at the defined positions, including noise.
@@ -29,9 +29,9 @@ The `Diag_ThomsonScattering` class simulates measurements obtained from a Thomso
 
 ---
 
-## Methods
+### Methods
 
-### `measure(equi)`
+#### `measure(equi)`
 Performs synthetic Thomson scattering measurements using equilibrium data.
 
 - Electron density (`ne`) and temperature (`Te`) are interpolated from the equilibrium grid at the specified diagnostic positions.
@@ -41,7 +41,7 @@ Performs synthetic Thomson scattering measurements using equilibrium data.
   - **Proportional noise**: Scales with the signal's value.
 - Final values including noise are stored in `ne` and `Te`.
 
-### `Upload(configuration)`
+#### `Upload(configuration)`
 Initialises the diagnostic setup by defining measurement positions and noise parameters.
 
 - If no configuration is specified, defaults to configuration `1`.
