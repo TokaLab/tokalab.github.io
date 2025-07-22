@@ -42,7 +42,7 @@ Performs synthetic Thomson scattering measurements using equilibrium data.
 - Final values including noise are stored in `ne` and `Te`.
 
 ### `Upload(configuration)`
-Initializes the diagnostic setup by defining measurement positions and noise parameters.
+Initialises the diagnostic setup by defining measurement positions and noise parameters.
 
 - If no configuration is specified, defaults to configuration `1`.
 - Measurement positions are generated as linear arrays in `R` and `Z`.
@@ -50,11 +50,32 @@ Initializes the diagnostic setup by defining measurement positions and noise par
 
 ---
 
-## Usage Example
+### Plotting Methods
+
+#### `plot_geo()`
+
+Plots the spatial distribution of the Thomson scattering measurement points in the poloidal plane.
+
+#### `plot_Ne_meas()`
+
+Plots the measured electron density values.
+
+#### `plot_Te_meas()`
+
+Plots the measured electron temperature values.
+
+#### `plot_StandAlone()`
+
+Plots both the ideal and noisy values of `ne` and `Te` side by side for comparison.
+
+---
+
+### Usage Example
 
 ```matlab
 ts = Diag_ThomsonScattering();
 ts = ts.Upload();             % Load default configuration
 ts = ts.measure(equilibrium); % Simulate measurement of ne and Te
-
+ts.plot_StandAlone();         % Visualize results
+```
 <p style="color:red;"><strong>⚠️ This documentation is still a work in progress. There may be errors or inaccuracies. Please feel free to contact us if you notice any issues.</strong></p>
