@@ -25,3 +25,6 @@ minimal_mistakes_skin: "default"
 navigation:
   enabled: true
   style: "overlay"
+
+social_links:
+  linkedin: "https://www.linkedin.com/company/tokalab-fusion/"
