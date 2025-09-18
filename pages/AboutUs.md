@@ -11,14 +11,14 @@ permalink: /AboutUs/
 
    <div style="text-align: center;">
     <img src="/assets/images/ProfileImg/FotoProfiloVA.png" 
-         alt="RN" 
+         alt="VA" 
          style="width: 100%; height: 200px; object-fit: cover;">
     <p>Vasiliki Anagnostopoulou</p>
   </div>
 
   <div style="text-align: center;">
     <img src="/assets/images/ProfileImg/FotoProfiloVD.png" 
-         alt="RN" 
+         alt="VD" 
          style="width: 100%; height: 200px; object-fit: cover;">
     <p>Valentina D'Agostino</p>
   </div>
