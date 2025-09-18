@@ -52,7 +52,7 @@ permalink: /AboutUs/
   </div>
 
   <div style="text-align: center;">
-    <img src="" 
+    <img src="/assets/images/ProfileImg/Space.png" 
          alt="" 
          style="width: 100%; height: 200px; object-fit: cover;">
     <p> </p>
@@ -66,7 +66,7 @@ permalink: /AboutUs/
   </div>
 
   <div style="text-align: center;">
-    <img src="" 
+    <img src="/assets/images/ProfileImg/Space.png" 
          alt="" 
          style="width: 100%; height: 200px; object-fit: cover;">
     <p> </p>
