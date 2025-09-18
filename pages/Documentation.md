@@ -10,8 +10,8 @@ TokaLab is an initiative focused on developing modular tools for simulating vari
 
 Below is a list of available modules, each with links to their respective documentation.
 
-[VirtualLab](/VirtualLab_Overview/)
+[VirtualLab](/VirtualLab/Overview/)
 
-[SimPla - Simulated Plasma](/SimPla_Overview/)  
+[SimPla - Simulated Plasma](/SimPla/Overview/)  
 
-[SynDiag - Synthetic Diagnostics](/SynDiag_Overview/)
+[SynDiag - Synthetic Diagnostics](/SynDiag/Overview/)
