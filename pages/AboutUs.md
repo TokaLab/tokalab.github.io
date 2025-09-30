@@ -10,14 +10,14 @@ permalink: /AboutUs/
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 20px;">
 
    <div style="text-align: center;">
-    <img src="/assets/images/ProfileImg/FotoProfiloVA.png" 
+    <img src="/assets/images/ProfileImg/FotoProfiloVA.jpg" 
          alt="VA" 
          style="width: 100%; height: 200px; object-fit: cover;">
     <p>Vasiliki Anagnostopoulou</p>
   </div>
 
   <div style="text-align: center;">
-    <img src="/assets/images/ProfileImg/FotoProfiloVD.png" 
+    <img src="/assets/images/ProfileImg/FotoProfiloVD.jpg" 
          alt="VD" 
          style="width: 100%; height: 200px; object-fit: cover;">
     <p>Valentina D'Agostino</p>
