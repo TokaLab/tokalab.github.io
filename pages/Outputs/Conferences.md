@@ -1,5 +1,5 @@
 ---
-layout: splash
+layout: single
 title: Conferences
 permalink: /Outputs/Conferences/
 sidebar: 

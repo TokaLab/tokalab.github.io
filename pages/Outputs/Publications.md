@@ -1,5 +1,5 @@
 ---
-layout: splash
+layout: single
 title: Publications
 permalink: /Outputs/Publications/
 sidebar: 
