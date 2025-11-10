@@ -3,7 +3,7 @@ layout: single
 title: Publications
 permalink: /Outputs/Publications/
 sidebar: 
-  nav:  "Outputs"
+  nav:  "outs"
 ---
 
 ## Publications in Peer-Reviewed Journals Using TokaLab
