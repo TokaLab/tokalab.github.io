@@ -3,7 +3,7 @@ layout: single
 title: Outputs
 permalink: /Outputs/
 sidebar: 
-  nav:  "Outputs"
+  nav:  "outs"
 ---
 
 ## TokaLab Scientific and Educational Outputs
