@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Publications
+title: Events
 permalink: /Outputs/Events/
 sidebar: 
   nav:  "Outputs"
