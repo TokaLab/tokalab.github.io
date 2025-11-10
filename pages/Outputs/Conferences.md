@@ -3,7 +3,7 @@ layout: single
 title: Conferences
 permalink: /Outputs/Conferences/
 sidebar: 
-  nav:  "Outputs"
+  nav:  "outs"
 ---
 
 ## Works Presented at Scientific Conferences, Workshops, and Summer Schools
