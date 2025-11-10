@@ -3,7 +3,7 @@ layout: single
 title: Events
 permalink: /Outputs/Events/
 sidebar: 
-  nav:  "Outputs"
+  nav:  "outs"
 ---
 
 ## Events
