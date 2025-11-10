@@ -2,20 +2,16 @@
 main:
   - title: "Documentation"
     url: /Documentation/
-  - title: "Publications"
-    url: /Publications/
+  - title: "Outputs"
+    url: /Outputs/
   - title: "Collaborate"
     url: /Collaborate/ 
   - title: "About Us"
     url: /AboutUs/
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Others"
+    url: /Others/
 
+# documentation links
 docs:
   - title: "VirtualLab"
     children:
@@ -48,7 +44,13 @@ docs:
       - title: "Thomson Scattering"
         url: /SynDiag/ThomsonScattering/
 
-
-
+# Research Outputs links
+Outputs:
+  - title: "Publications"
+    url: /Outputs/Publications/
+  - title: "Conferences"
+    url: /Outputs/Conferences/
+  - title: "Events"
+    url: /Outputs/Events/
 
         
