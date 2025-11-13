@@ -1,5 +1,5 @@
 ---
-layout: Splash
+layout: single
 title: Tor Vergata Computational Laboratory 
 permalink: /Others/TorVergataComputationalLaboratory
 ---
