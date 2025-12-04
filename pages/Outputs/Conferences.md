@@ -24,7 +24,7 @@ sidebar:
 
 4. **N. Rutigliano et al.**  
    *Multi-Diagnostic Plasma Equilibrium Reconstructions with Physics-Informed Neural Networks (PINNs) for Tokamak Applications*  
-   **ITER International School**, 30 June – 4 July 2025
+   **14th ITER International School**, 30 June – 4 July 2025
 
 5. **N. Rutigliano et al.**  
    *A Multi-Diagnostics Plasma Equilibrium Reconstructor Through Physics-Informed Neural Networks (PINNs) for Nuclear Fusion Applications*  
