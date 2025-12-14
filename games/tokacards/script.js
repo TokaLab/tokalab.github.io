@@ -1,26 +1,45 @@
-const cards = [
-  { word: "Elefante", mode: "Mimo" },
-  { word: "Bicicletta", mode: "Disegno" },
-  { word: "Computer", mode: "Taboo" },
-  { word: "Pizza", mode: "Mimo" }
-];
+let forbiddenData = null;
 
-const wordEl = document.getElementById("word");
-const modeEl = document.getElementById("mode");
+// ELEMENTI DOM
+const cardEl = document.getElementById("card");
 const imageEl = document.getElementById("cardImage");
+const wordEl = document.getElementById("word");
+const descriptionEl = document.getElementById("description");
+const forbiddenListEl = document.getElementById("forbiddenList");
 const button = document.getElementById("drawButton");
 
-const templates = {
-  "Mimo": "images/mimic.png",
-  "Disegno": "images/drawit.png",
-  "Taboo": "images/forbidden.png"
-};
+// CARICAMENTO JSON
+fetch("data/forbidden.json")
+  .then(response => response.json())
+  .then(data => {
+    forbiddenData = data;
+    console.log("Forbidden loaded:", forbiddenData);
+  })
+  .catch(error => {
+    console.error("Errore nel caricare forbidden.json", error);
+  });
 
+// PESCA CARTA
 button.addEventListener("click", () => {
+  if (!forbiddenData) return;
+
+  const cards = forbiddenData.cards;
   const randomIndex = Math.floor(Math.random() * cards.length);
   const card = cards[randomIndex];
 
+  // Imposta modalità e template
+  cardEl.className = "mode-forbidden";
+  imageEl.src = forbiddenData.template;
+
+  // Testi
   wordEl.textContent = card.word;
-  modeEl.textContent = card.mode;
-  imageEl.src = templates[card.mode];
+  descriptionEl.textContent = card.description;
+
+  // Lista forbidden
+  forbiddenListEl.innerHTML = "";
+  card.forbidden.forEach(item => {
+    const li = document.createElement("li");
+    li.textContent = item;
+    forbiddenListEl.appendChild(li);
+  });
 });
