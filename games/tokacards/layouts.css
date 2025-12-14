@@ -1,18 +1,21 @@
 #card.mode-forbidden .word {
   position: absolute;
-  top: 6%;                /* punto di riferimento verticale */
+  top: 6.5%;                /* punto di riferimento verticale */
   left: 50%;              /* centro orizzontale */
   transform: translateX(-50%); /* centra il layer orizzontalmente */
   
-  width: 80%;             /* larghezza layer */
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* centra verticalmente le righe all’interno del layer */
+  width: 90%;             /* larghezza layer */
+  height: 12%;
   
   text-align: center;      /* centra ogni riga */
   font-size: 28px;
   font-weight: bold;
-  
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centra verticalmente le righe all’interno del layer */
+  text-align: center;      /* centra orizzontalmente le righe */
+
    /* Gestione wrap intelligente */
   white-space: normal;        /* permette il wrap normale solo se serve */
   word-break: keep-all;       /* evita di rompere le parole se c'è spazio */
@@ -36,7 +39,7 @@
   font-size: 26px;
   padding: 1;
   font-weight: bold;
-  margin-bottom: 8px;
+  margin-bottom: 14px;
   line-height: 1.5;  /* altezza della linea */
 }
 
