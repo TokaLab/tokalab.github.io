@@ -9,7 +9,7 @@ const forbiddenListEl = document.getElementById("forbiddenList");
 const button = document.getElementById("drawButton");
 
 // CARICAMENTO JSON
-fetch("data/forbidden.json")
+fetch("data/forbidden.json?t=" + new Date().getTime())
   .then(response => response.json())
   .then(data => {
     forbiddenData = data;
@@ -43,3 +43,4 @@ button.addEventListener("click", () => {
     forbiddenListEl.appendChild(li);
   });
 });
+
