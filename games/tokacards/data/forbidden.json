@@ -1,0 +1,347 @@
+{
+  "mode": "Forbidden",
+  "template": "images/forbidden.png",
+  "cards": [
+    {
+      "word": "NBI - Neutral Beam Injector",
+      "description": "Description text, not over 20 words",
+      "forbidden": [
+        "Heatings",
+        "Accelerator",
+        "RFX",
+        "Temperature",
+        "Deuterium"
+      ]
+    },
+    {
+      "word": "Density Limit",
+      "description": "Description text, not over 20 words",
+      "forbidden": [
+        "Greenwald",
+        "Disruption",
+        "Interferometer",
+        "MARFE",
+        "X-point"
+      ]
+    },
+    {
+      "word": "Divertor Tokamak Test - DTT",
+      "description": "Description text, not over 20 words",
+      "forbidden": [
+        "Frascati",
+        "ENEA",
+        "Technology",
+        "Italy",
+        "Exhaust"
+      ]
+    },
+    {
+      "word": "Plasma Frequency",
+      "description": "Description text, not over 20 words",
+      "forbidden": [
+        "Electron density",
+        "Electromagnetic vawe",
+        "Dispersion relation",
+        "Interferometer",
+        "Oscillations"
+      ]
+    },
+    {
+      "word": "Q factor",
+      "description": "Description text, not over 20 words",
+      "forbidden": [
+        "Energy",
+        "Record",
+        "Ignition",
+        "ITER",
+        "Heatings"
+      ]
+    },
+    {
+      "word": "Plasma",
+      "description": "Description text, not over 20 words",
+      "forbidden": [
+        "Gas",
+        "Ionised",
+        "State of matter",
+        "Tokamak",
+        "Sun"
+      ]
+    },
+    {
+      "word": "Thomson scattering",
+      "description": "Description text, not over 20 words",
+      "forbidden": [
+        "Electron",
+        "Density",
+        "Temperature",
+        "Diagnostic",
+        "Laser"
+      ]
+    },
+    {
+      "word": "Divertor",
+      "description": "Description text, not over 20 words",
+      "forbidden": [
+        "Heat exhaust",
+        "Thermal Flux",
+        "Reactor component",
+        "Limiter",
+        "Tungsten"
+      ]
+    },
+    {
+      "word": "Plasma Facing Component",
+      "description": "Description text, not over 20 words",
+      "forbidden": [
+        "First wall",
+        "Heat loads",
+        "Cooling",
+        "Tungsten",
+        "Neutronics"
+      ]
+    },
+    {
+      "word": "TCV",
+      "description": "Description text, not over 20 words",
+      "forbidden": [
+        "Switzerland",
+        "Lausanne",
+        "Plasma",
+        "Tokamak",
+        "EPFL"
+      ]
+    },
+    {
+      "word": "Fusion",
+      "description": "Description text, not over 20 words",
+      "forbidden": [
+        "Sun",
+        "Tritium",
+        "Energy",
+        "Fission",
+        "Deuterium"
+      ]
+    },
+    {
+      "word": "Debye's length",
+      "description": "Description text, not over 20 words",
+      "forbidden": [
+        "Plasma",
+        "Neutral",
+        "Charge ",
+        "Shielding",
+        "Meter"
+      ]
+    },
+    {
+      "word": "ECRH",
+      "description": "Description text, not over 20 words",
+      "forbidden": [
+        "Radiowave",
+        "Gyrotrons",
+        "Heatings",
+        "Temperature",
+        "ICRH"
+      ]
+    },
+    {
+      "word": "Interferometer",
+      "description": "Description text, not over 20 words",
+      "forbidden": [
+        "Diagnostic",
+        "Refractive index",
+        "Laser ",
+        "Fringe Jumps",
+        "Electron density"
+      ]
+    },
+    {
+      "word": "Neutron",
+      "description": "Description text, not over 20 words",
+      "forbidden": [
+        "Detector",
+        "Nucleus",
+        "Proton",
+        "Isotope",
+        "Hidrogen"
+      ]
+    },
+    {
+      "word": "Scrape Off Layer",
+      "description": "Description text, not over 20 words",
+      "forbidden": [
+        "Neutrals",
+        "Separatrix",
+        "Divertor",
+        "Heat",
+        "Detachment"
+      ]
+    },
+    {
+      "word": "Tritium",
+      "description": "Description text, not over 20 words",
+      "forbidden": [
+        "Isotope",
+        "Hidrogen",
+        "Radioactive",
+        "Deuterium",
+        "Neutrons"
+      ]
+    },
+    {
+      "word": "Cross Section",
+      "description": "Description text, not over 20 words",
+      "forbidden": [
+        "Probability",
+        "Frequency",
+        "Interactions",
+        "Temperature",
+        "Reactions"
+      ]
+    },
+    {
+      "word": "Lawson Criterium",
+      "description": "Description text, not over 20 words",
+      "forbidden": [
+        "Temperature",
+        "Density",
+        "Confinement time",
+        "Energy",
+        "Q-factor"
+      ]
+    },
+    {
+      "word": "Stellarator",
+      "description": "Description text, not over 20 words",
+      "forbidden": [
+        "Tokamak",
+        "Symmetric",
+        "Reactor",
+        "W7X",
+        "Magnetic Confinement"
+      ]
+    },
+    {
+      "word": "Deuterio",
+      "description": "Description text, not over 20 words",
+      "forbidden": [
+        "Isotope",
+        "Hydrogen",
+        "Fusion",
+        "Water",
+        "Breeding Blanket"
+      ]
+    },
+    {
+      "word": "Breeding Blanket",
+      "description": "Description text, not over 20 words",
+      "forbidden": [
+        "Fuel Cycle",
+        "Neutrons",
+        "Tritium",
+        "Lithium",
+        "Lead-Beryllium"
+      ]
+    },
+    {
+      "word": "Solov'ev solution",
+      "description": "Description text, not over 20 words",
+      "forbidden": [
+        "Grad-Shafranov ",
+        "Magnetic Flux",
+        "Equilibrium",
+        "Analythic ",
+        "2D"
+      ]
+    },
+    {
+      "word": "Saddle Coils",
+      "description": "Description text, not over 20 words",
+      "forbidden": [
+        "Diagnostic",
+        "Measurements",
+        "Magnetic Flux",
+        "Mode Locking",
+        "Large"
+      ]
+    },
+    {
+      "word": "Mirnov Coils",
+      "description": "Description text, not over 20 words",
+      "forbidden": [
+        "Diagnostic",
+        "Measurements",
+        "Magnetic Fields",
+        "Fast",
+        "Local"
+      ]
+    },
+    {
+      "word": "Superconductivity",
+      "description": "Description text, not over 20 words",
+      "forbidden": [
+        "Magnetism",
+        "Criogeny",
+        "Coils",
+        "Tokamak",
+        "Nb-St"
+      ]
+    },
+    {
+      "word": "TokaLab",
+      "description": "Description text, not over 20 words",
+      "forbidden": [
+        "Open Access",
+        "Virtual",
+        "Education",
+        "Equilibrium",
+        "Diagnostic"
+      ]
+    },
+    {
+      "word": "JT-60SA",
+      "description": "Description text, not over 20 words",
+      "forbidden": [
+        "Japan",
+        "NAKA",
+        "International School",
+        "Tokamak",
+        "EUROfusion"
+      ]
+    },
+    {
+      "word": "Tokamak",
+      "description": "Description text, not over 20 words",
+      "forbidden": [
+        "Plasma",
+        "Magnetic Confinement",
+        "Russian",
+        "Reactor",
+        "Torus / Donut"
+      ]
+    },
+    {
+      "word": "Remote Handling",
+      "description": "Description text, not over 20 words",
+      "forbidden": [
+        "Robot",
+        "Control",
+        "JET",
+        "Hands",
+        "RACE"
+      ]
+    },
+    {
+      "word": "Disruption",
+      "description": "Description text, not over 20 words",
+      "forbidden": [
+        "Anomaly",
+        "MHD",
+        "Dangerous",
+        "Ramp Down",
+        "Instability"
+      ]
+    }
+  ]
+}

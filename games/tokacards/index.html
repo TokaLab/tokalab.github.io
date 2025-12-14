@@ -3,23 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <title>TokaCards</title>
+
+  <!-- Stili base -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Layout per modalità -->
+  <link rel="stylesheet" href="layouts.css">
 </head>
 <body>
 
   <h1>TokaCards</h1>
 
-  <div id="card">
-    <img id="cardImage" src="images/forbidden.png" alt="Carta" />
-    <div id="textOverlay">
-      <p id="mode">Modalità</p>
-      <h2 id="word">Premi il bottone</h2>
-    </div>
+  <div id="card" class="mode-forbidden">
+    <img id="cardImage" src="images/forbidden.png" alt="Carta">
+
+    <!-- LAYERS -->
+    <div class="layer word" id="word"></div>
+    <div class="layer description" id="description"></div>
+    <ul class="layer forbidden-list" id="forbiddenList"></ul>
   </div>
 
   <button id="drawButton">Pesca carta</button>
 
-  <!-- Collegamento JS alla fine del body -->
   <script src="script.js"></script>
 </body>
 </html>

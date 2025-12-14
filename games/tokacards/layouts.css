@@ -1,0 +1,25 @@
+#card.mode-forbidden .word {
+  top: 12%;
+  left: 10%;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#card.mode-forbidden .description {
+  top: 22%;
+  left: 10%;
+  width: 80%;
+  font-size: 14px;
+}
+
+#card.mode-forbidden .forbidden-list {
+  bottom: 12%;
+  left: 10%;
+  width: 80%;
+  list-style: none;
+  padding: 0;
+}
+
+#card.mode-forbidden .forbidden-list li {
+  font-size: 16px;
+}
