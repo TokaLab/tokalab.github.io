@@ -1,6 +1,6 @@
 #card.mode-forbidden .word {
   position: absolute;
-  top: 4%;                /* punto di riferimento verticale */
+  top: 3.5%;                /* punto di riferimento verticale */
   left: 50%;              /* centro orizzontale */
   transform: translateX(-50%); /* centra il layer orizzontalmente */
   
@@ -31,7 +31,7 @@
 }
 
 #card.mode-forbidden .forbidden-list {
-  top: 40%;
+  top: 42%;
   left: 50%;
   transform: translateX(-50%);
   width: 80%;
@@ -39,7 +39,7 @@
   font-size: 26px;
   padding: 1;
   font-weight: bold;
-  margin-bottom: 14px;
+  margin-bottom: 18px;
   line-height: 1.5;  /* altezza della linea */
 }
 
