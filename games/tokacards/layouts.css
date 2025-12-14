@@ -1,25 +1,31 @@
 #card.mode-forbidden .word {
-  top: 12%;
-  left: 10%;
+  top: 8%;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 28px;
   font-weight: bold;
 }
 
 #card.mode-forbidden .description {
   top: 22%;
-  left: 10%;
+  left: 50%;
+  transform: translateX(-50%);
   width: 80%;
   font-size: 14px;
 }
 
 #card.mode-forbidden .forbidden-list {
-  bottom: 12%;
-  left: 10%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
   width: 80%;
   list-style: none;
-  padding: 0;
+  font-size: 26px;
+  padding: 1;
+  font-weight: bold;
 }
 
-#card.mode-forbidden .forbidden-list li {
-  font-size: 16px;
+#card.mode-forbidden .layer {
+  color: white;           /* colore bianco */
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);  /* opzione: ombra per leggibilità */
 }
