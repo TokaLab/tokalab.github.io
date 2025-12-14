@@ -12,6 +12,11 @@
   text-align: center;      /* centra ogni riga */
   font-size: 28px;
   font-weight: bold;
+  
+   /* Gestione wrap intelligente */
+  white-space: normal;        /* permette il wrap normale solo se serve */
+  word-break: keep-all;       /* evita di rompere le parole se c'è spazio */
+  overflow-wrap: break-word;  /* fallback per lunghe parole senza spazi */
 }
 
 #card.mode-forbidden .description {
