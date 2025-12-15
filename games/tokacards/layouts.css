@@ -31,16 +31,21 @@
 }
 
 #card.mode-forbidden .forbidden-list {
+  position: absolute;
   top: 42%;
   left: 50%;
   transform: translateX(-50%);
   width: 80%;
+
   list-style: none;
+  padding: 0;
+  margin: 0;
+
   font-size: 26px;
-  padding: 1;
   font-weight: bold;
-  margin-bottom: 8px;
-  line-height: 2;  /* altezza della linea */
+
+  margin-bottom: 24px;   /* spazio verticale tra parole */
+  line-height: 1.2;      /* compatta il testo interno */
 }
 
 #card.mode-forbidden .layer {
