@@ -46,7 +46,7 @@
 }
 
 #card.mode-forbidden .forbidden-list li {
-  margin-bottom: 2em;   /* ≈ 2 × font-size */
+  margin-bottom: 1em;   /* ≈ 2 × font-size */
   line-height: 1.1;
 }
 
