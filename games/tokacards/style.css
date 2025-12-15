@@ -24,9 +24,11 @@ h1 {
 
 #card {
   position: relative;
-  width: 360px;
+  width: 90vw;          /* quasi tutta la larghezza su mobile */
+  max-width: 380px;     /* limite su desktop */
   aspect-ratio: 2 / 3;
   margin: 0 auto 20px auto;
+
 }
 
 /* ===============================
