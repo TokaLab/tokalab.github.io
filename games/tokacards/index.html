@@ -11,24 +11,26 @@
   <link rel="stylesheet" href="layouts.css">
 </head>
 
-
 <body>
 
   <h1>TokaCards</h1>
 
-  <div id="card" class="mode-forbidden">
-    <img id="cardImage" src="images/forbidden.png" alt="Carta">
+  <div class="game-area">
 
-    <!-- LAYERS -->
-    <div class="layer word" id="word"></div>
-    <div class="layer description" id="description"></div>
-    <ul class="layer forbidden-list" id="forbiddenList"></ul>
+    <div id="card" class="mode-forbidden">
+      <img id="cardImage" src="images/forbidden.png" alt="Carta">
+
+      <!-- LAYERS -->
+      <div class="layer word" id="word"></div>
+      <div class="layer description" id="description"></div>
+      <ul class="layer forbidden-list" id="forbiddenList"></ul>
+    </div>
+
+    <button id="drawButton">Draw a New Card</button>
+
   </div>
-
-  <button id="drawButton">Draw a New Card</button>
 
   <script src="script.js"></script>
 </body>
-
 
 </html>
