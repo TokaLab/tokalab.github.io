@@ -44,8 +44,8 @@
   font-size: 26px;
   font-weight: bold;
 
-  margin-bottom: 24px;   /* spazio verticale tra parole */
-  line-height: 2;      /* compatta il testo interno */
+  margin-bottom: 2em;   /* spazio verticale tra parole */
+  line-height: 1.1;      /* compatta il testo interno */
 }
 
 #card.mode-forbidden .layer {
