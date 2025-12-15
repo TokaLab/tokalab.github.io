@@ -74,11 +74,17 @@ h1 {
    =============================== */
 
 #drawButton {
-  font-size: 18px;
-  padding: 10px 24px;
+  font-size: clamp(16px, 4.5vw, 20px);
+  padding: clamp(12px, 3.5vw, 18px) clamp(24px, 6vw, 36px);
+  
+  min-width: 60%;
+  min-height: 48px;          /* standard touch size */
+  
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 12px;
   border: none;
   background-color: #222;
   color: white;
 }
+
+

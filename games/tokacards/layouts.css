@@ -39,8 +39,8 @@
   font-size: 26px;
   padding: 1;
   font-weight: bold;
-  margin-bottom: 26px;
-  line-height: 1.5;  /* altezza della linea */
+  margin-bottom: 8px;
+  line-height: 2;  /* altezza della linea */
 }
 
 #card.mode-forbidden .layer {
