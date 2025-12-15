@@ -43,9 +43,11 @@
 
   font-size: 26px;
   font-weight: bold;
+}
 
-  margin-bottom: 2em;   /* spazio verticale tra parole */
-  line-height: 1.1;      /* compatta il testo interno */
+#card.mode-forbidden .forbidden-list li {
+  margin-bottom: 2em;   /* ≈ 2 × font-size */
+  line-height: 1.1;
 }
 
 #card.mode-forbidden .layer {
