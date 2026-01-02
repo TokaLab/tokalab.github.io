@@ -14,7 +14,7 @@ if (!nickname) {
 }
 
 const SUPABASE_URL = "https://tvrnrbssryivvozgejmx.supabase.co";
-const SUPABASE_KEY = "TUO_SUPABASE_KEY";
+const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR2cm5yYnNzcnlpdnZvemdlam14Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjczNzE4MTUsImV4cCI6MjA4Mjk0NzgxNX0.XEm1aW3wgwD-iaUMSrhN9N3AM1oF3o4ae5-k9zGJkaI";
 
 const today = new Date().toISOString().slice(0, 10);
 
