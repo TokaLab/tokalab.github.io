@@ -124,17 +124,51 @@ async function sendScore() {
 
 async function loadLeaderboard() {
   try {
-    const res = await fetch(`${SUPABASE_URL}/rest/v1/scores?select=nickname,score,date&date=eq.${today}&order=score.desc&limit=10`, {
-      headers: { "apikey": SUPABASE_KEY, "Authorization": `Bearer ${SUPABASE_KEY}` }
-    });
-    if (!res.ok) throw await res.text();
+    // Definisci inizio e fine giornata
+    const startOfDay = today + "T00:00:00";
+    const endOfDay   = today + "T23:59:59";
+
+    // Richiesta a Supabase filtrando per intervallo di oggi
+    const res = await fetch(
+      `${SUPABASE_URL}/rest/v1/scores?select=nickname,score,date&date=gte.${startOfDay}&date=lte.${endOfDay}&order=score.desc&limit=10`,
+      {
+        method: "GET",
+        headers: {
+          "apikey": SUPABASE_KEY,
+          "Authorization": `Bearer ${SUPABASE_KEY}`
+        }
+      }
+    );
+
+    if (!res.ok) {
+      const text = await res.text();
+      console.warn("Errore caricamento classifica", text);
+      leaderboardList.innerHTML = "<li>Errore nel caricamento</li>";
+      showLeaderboardBtn.classList.remove("hidden");
+      return;
+    }
+
     const data = await res.json();
-    leaderboardList.innerHTML = data.length ? data.map(e => `<li>${e.nickname}: ${e.score}</li>`).join("") : "<li>Nessun punteggio oggi</li>";
+    leaderboardList.innerHTML = "";
+
+    if (data.length === 0) {
+      leaderboardList.innerHTML = "<li>Nessun punteggio oggi</li>";
+    } else {
+      data.forEach(entry => {
+        const li = document.createElement("li");
+        li.textContent = `${entry.nickname}: ${entry.score}`;
+        leaderboardList.appendChild(li);
+      });
+    }
+
+    // Mostra sempre il pulsante per aprire la leaderboard
+    showLeaderboardBtn.classList.remove("hidden");
+
   } catch (err) {
-    console.warn("Errore caricamento classifica", err);
+    console.error("Errore loadLeaderboard", err);
     leaderboardList.innerHTML = "<li>Errore nel caricamento</li>";
+    showLeaderboardBtn.classList.remove("hidden");
   }
-  showLeaderboardBtn.classList.remove("hidden"); // sempre visibile
 }
 
 // Eventi
