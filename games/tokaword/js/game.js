@@ -124,12 +124,11 @@ async function sendScore() {
 
 async function loadLeaderboard() {
   try {
-    // today nel formato YYYY-MM-DD
     const todayDate = new Date().toISOString().slice(0, 10);
 
-    // Richiesta Supabase filtrando per oggi
+    // Prendi tutti i punteggi (o almeno gli ultimi 100)
     const res = await fetch(
-      `${SUPABASE_URL}/rest/v1/scores?select=nickname,score,date&date=eq.${todayDate}&order=score.desc&limit=10`,
+      `${SUPABASE_URL}/rest/v1/scores?select=nickname,score,date&order=score.desc&limit=100`,
       {
         method: "GET",
         headers: {
@@ -148,19 +147,22 @@ async function loadLeaderboard() {
     }
 
     const data = await res.json();
+
+    // Filtra solo i punteggi di oggi
+    const todayScores = data.filter(entry => entry.date.startsWith(todayDate));
+
     leaderboardList.innerHTML = "";
 
-    if (data.length === 0) {
+    if (todayScores.length === 0) {
       leaderboardList.innerHTML = "<li>Nessun punteggio oggi</li>";
     } else {
-      data.forEach(entry => {
+      todayScores.forEach(entry => {
         const li = document.createElement("li");
         li.textContent = `${entry.nickname}: ${entry.score}`;
         leaderboardList.appendChild(li);
       });
     }
 
-    // Mostra sempre il pulsante
     showLeaderboardBtn.classList.remove("hidden");
 
   } catch (err) {
