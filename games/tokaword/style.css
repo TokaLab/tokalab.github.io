@@ -3,6 +3,7 @@ body {
   background: #0b1020;
   color: #ffffff;
   display: flex;
+  flex-direction: column; /* per pulsante sotto */
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -63,7 +64,7 @@ h1 {
 }
 
 .hidden {
-  display: none !important; /* !important garantisce che prevalga su display flex */
+  display: none !important;
 }
 
 .modal {
@@ -76,7 +77,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999; /* rimane sopra tutto */
+  z-index: 9999;
 }
 
 .modal-content {
@@ -96,8 +97,8 @@ h1 {
 
 /* Pulsante classifica */
 #showLeaderboardBtn {
-  display: block;          /* visibile come blocco */
-  margin: 1rem auto;       /* centrato sotto il gioco */
+  display: block;
+  margin: 1rem auto;
   padding: 0.6rem 1.2rem;
   font-size: 1rem;
   border-radius: 8px;
@@ -108,7 +109,6 @@ h1 {
   z-index: 10000;
 }
 
-/* Al passaggio del mouse */
 #showLeaderboardBtn:hover {
   background-color: #33415c;
 }
