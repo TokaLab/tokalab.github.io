@@ -44,7 +44,6 @@ function getWordOfTheDay() {
 }
 
 function startGame() {
-  loadLeaderboard();
   const playedToday = localStorage.getItem("playedToday");
   if (playedToday === today) lockGame();
   currentWord = getWordOfTheDay();
@@ -142,8 +141,6 @@ async function loadLeaderboard() {
       }
     );
 
-    console.log(res);
-
     if (!res.ok) {
       const text = await res.text();
       console.warn("Errore caricamento classifica", text);
@@ -153,6 +150,8 @@ async function loadLeaderboard() {
     }
 
     const data = await res.json();
+
+    console.log("Dati leaderboard", data);
 
     // Filtra solo i punteggi di oggi
     const todayScores = data.filter(entry => entry.date.startsWith(todayDate));
