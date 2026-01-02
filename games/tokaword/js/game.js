@@ -300,3 +300,6 @@ showLeaderboardBtn.addEventListener("click", () => {
 closeLeaderboard.addEventListener("click", () => {
   leaderboardModal.classList.add("hidden");
 });
+
+// --- NUOVO ---
+loadLeaderboard(); // <-- chiama subito la leaderboard all’avvio
