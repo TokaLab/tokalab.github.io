@@ -228,7 +228,7 @@ async function sendScore() {
 
 async function loadLeaderboard() {
   try {
-    const res = await fetch(`${SUPABASE_URL}/rest/v1/scores?select=nickname,score,play_date&play_date=eq.${today}&order=score.desc&limit=10`, {
+    const res = await fetch(`${SUPABASE_URL}/rest/v1/scores?select=nickname,score,date&date=eq.${today}&order=score.desc&limit=10`, {
       method: "GET",
       headers: {
         "apikey": SUPABASE_KEY,
