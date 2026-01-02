@@ -1,58 +1,36 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-  <meta charset="UTF-8" />
-  <title>Fusion Guess</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+<main class="game">
+  <h1>Fusion Guess</h1>
 
-  <main class="game">
+  <div id="category" class="category"></div>
+  <div id="maskedWord" class="masked-word">_ _ _ _ _</div>
 
-    <h1>Fusion Guess</h1>
+  <div class="controls">
+    <input type="text" id="guessInput" placeholder="Scrivi la parola" autocomplete="off" />
+    <button id="guessBtn">Indovina</button>
+  </div>
 
-    <div id="category" class="category"></div>
+  <div class="hints">
+    <button id="hintBtn">Suggerimento</button>
+    <ul id="hintList"></ul>
+  </div>
 
-    <div id="maskedWord" class="masked-word">_ _ _ _ _</div>
+  <div class="status">
+    <p>Punteggio: <span id="score">100</span></p>
+    <p>Errori: <span id="attempts">0</span></p>
+  </div>
 
-    <div class="controls">
-      <input
-        type="text"
-        id="guessInput"
-        placeholder="Scrivi la parola"
-        autocomplete="off"
-      />
-      <button id="guessBtn">Indovina</button>
-    </div>
+  <div id="message" class="message"></div>
+  <button id="restartBtn" class="hidden">Nuova parola</button>
+</main>
 
-    <div class="hints">
-      <button id="hintBtn">Suggerimento</button>
-      <ul id="hintList"></ul>
-    </div>
+<!-- Pulsante leaderboard fuori dal main -->
+<button id="showLeaderboardBtn" class="hidden">Vedi Classifica</button>
 
-    <div class="status">
-      <p>Punteggio: <span id="score">100</span></p>
-      <p>Errori: <span id="attempts">0</span></p>
-    </div>
-
-    <div id="message" class="message"></div>
-
-    <button id="restartBtn" class="hidden">Nuova parola</button>
-    <button id="showLeaderboardBtn" class="hidden">Vedi Classifica</button>
-
-    <!-- MODALE CLASSIFICA -->
-    <div id="leaderboardModal" class="modal hidden">
-      <div class="modal-content">
-        <span id="closeLeaderboard" class="close">&times;</span>
-        <h2>Classifica di oggi</h2>
-        <ol id="leaderboardList"></ol>
-      </div>
-    </div>
-
-  </main>
-
-  <script type="module" src="js/game.js"></script>
-
-</body>
-</html>
+<!-- MODALE CLASSIFICA -->
+<div id="leaderboardModal" class="modal hidden">
+  <div class="modal-content">
+    <span id="closeLeaderboard" class="close">&times;</span>
+    <h2>Classifica di oggi</h2>
+    <ol id="leaderboardList"></ol>
+  </div>
+</div>

@@ -93,3 +93,22 @@ h1 {
   font-size: 1.5rem;
   cursor: pointer;
 }
+
+/* Pulsante classifica */
+#showLeaderboardBtn {
+  display: block;          /* visibile come blocco */
+  margin: 1rem auto;       /* centrato sotto il gioco */
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  background-color: #1c2541;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+/* Al passaggio del mouse */
+#showLeaderboardBtn:hover {
+  background-color: #33415c;
+}
