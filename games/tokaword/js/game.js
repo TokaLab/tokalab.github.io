@@ -1,9 +1,49 @@
 import { WORDS } from "./words.js";
 
+/* =========================
+   IDENTITÀ GIOCATORE
+========================= */
+
+let playerId = localStorage.getItem("playerId");
+let nickname = localStorage.getItem("nickname");
+
+if (!playerId) {
+  playerId = crypto.randomUUID();
+  localStorage.setItem("playerId", playerId);
+}
+
+if (!nickname) {
+  nickname = prompt("Scegli un nickname");
+  localStorage.setItem("nickname", nickname);
+}
+
+/* =========================
+   DATA
+========================= */
+
+const SUPABASE_URL = "https://tvrnrbssryivvozgejmx.supabase.co";
+const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR2cm5yYnNzcnlpdnZvemdlam14Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjczNzE4MTUsImV4cCI6MjA4Mjk0NzgxNX0.XEm1aW3wgwD-iaUMSrhN9N3AM1oF3o4ae5-k9zGJkaI";
+
+
+/* =========================
+   DATA
+========================= */
+
+const today = new Date().toISOString().slice(0, 10);
+
+/* =========================
+   STATO DI GIOCO
+========================= */
+
 let currentWord;
 let score;
 let attempts;
 let hintsUsed;
+let gameEnded = false;
+
+/* =========================
+   ELEMENTI DOM
+========================= */
 
 const categoryEl = document.getElementById("category");
 const maskedWordEl = document.getElementById("maskedWord");
@@ -17,37 +57,85 @@ const guessBtn = document.getElementById("guessBtn");
 const hintBtn = document.getElementById("hintBtn");
 const restartBtn = document.getElementById("restartBtn");
 
+/* =========================
+   PAROLA DEL GIORNO
+========================= */
+
+function getWordOfTheDay() {
+  const start = new Date("2024-01-01");
+  const now = new Date();
+  const diffDays = Math.floor((now - start) / 86400000);
+  return WORDS[diffDays % WORDS.length];
+}
+
+/* =========================
+   AVVIO GIOCO
+========================= */
+
 function startGame() {
-  currentWord = WORDS[Math.floor(Math.random() * WORDS.length)];
+  const playedToday = localStorage.getItem("playedToday");
+
+  if (playedToday === today) {
+    lockGame();
+    return;
+  }
+
+  currentWord = getWordOfTheDay();
   score = 100;
   attempts = 0;
   hintsUsed = 0;
+  gameEnded = false;
 
   categoryEl.textContent = currentWord.category;
   maskedWordEl.textContent = "_ ".repeat(currentWord.answer.length);
   scoreEl.textContent = score;
   attemptsEl.textContent = attempts;
   messageEl.textContent = "";
-  hintListEl.innerHTML = "";
 
+  hintListEl.innerHTML = "";
   guessInput.value = "";
+  guessInput.disabled = false;
+  guessBtn.disabled = false;
+  hintBtn.disabled = false;
+
   restartBtn.classList.add("hidden");
 }
 
+/* =========================
+   BLOCCO GIORNALIERO
+========================= */
+
+function lockGame() {
+  currentWord = getWordOfTheDay();
+
+  categoryEl.textContent = currentWord.category;
+  maskedWordEl.textContent = currentWord.answer.split("").join(" ");
+  messageEl.textContent =
+    "⏳ Hai già giocato oggi. Torna domani per una nuova parola!";
+
+  guessInput.disabled = true;
+  guessBtn.disabled = true;
+  hintBtn.disabled = true;
+  restartBtn.classList.add("hidden");
+}
+
+/* =========================
+   CONTROLLO RISPOSTA
+========================= */
+
 function checkGuess() {
+  if (gameEnded) return;
+
   const guess = guessInput.value.trim().toUpperCase();
   if (!guess) return;
 
   if (guess === currentWord.answer) {
-    messageEl.textContent = "✅ Corretto! " + currentWord.explanation;
-    restartBtn.classList.remove("hidden");
-    guessBtn.disabled = true;
-    hintBtn.disabled = true;
+    endGame(true);
     return;
   }
 
   attempts++;
-  score -= 5;
+  score = Math.max(0, score - 5);
 
   attemptsEl.textContent = attempts;
   scoreEl.textContent = score;
@@ -56,7 +144,12 @@ function checkGuess() {
   guessInput.value = "";
 }
 
+/* =========================
+   SUGGERIMENTI
+========================= */
+
 function giveHint() {
+  if (gameEnded) return;
   if (hintsUsed >= currentWord.hints.length) return;
 
   const hint = currentWord.hints[hintsUsed];
@@ -65,17 +158,75 @@ function giveHint() {
   hintListEl.appendChild(li);
 
   hintsUsed++;
-  score -= 10;
-
+  score = Math.max(0, score - 10);
   scoreEl.textContent = score;
 }
 
+/* =========================
+   FINE PARTITA
+========================= */
+
+function endGame(success) {
+  gameEnded = true;
+  localStorage.setItem("playedToday", today);
+
+  guessInput.disabled = true;
+  guessBtn.disabled = true;
+  hintBtn.disabled = true;
+
+  if (success) {
+    messageEl.textContent =
+      `✅ Corretto! ${currentWord.explanation}`;
+  } else {
+    messageEl.textContent =
+      `❌ La parola era ${currentWord.answer}`;
+  }
+
+  // QUI più avanti:
+  // invio punteggio a Supabase
+  sendScore();
+}
+
+
+async function sendScore() {
+  try {
+    const res = await fetch(`${SUPABASE_URL}/rest/v1/scores`, {
+      method: "POST",
+      headers: {
+        "apikey": SUPABASE_KEY,
+        "Authorization": `Bearer ${SUPABASE_KEY}`,
+        "Content-Type": "application/json",
+        "Prefer": "return=minimal"
+      },
+      body: JSON.stringify({
+        player_id: playerId,
+        nickname,
+        score,
+        date: today
+      })
+    });
+
+    if (!res.ok) {
+      console.warn("Score già inviato o errore");
+    }
+  } catch (err) {
+    console.error("Errore invio score", err);
+  }
+}
+
+/* =========================
+   EVENTI
+========================= */
+
 guessBtn.addEventListener("click", checkGuess);
 hintBtn.addEventListener("click", giveHint);
-restartBtn.addEventListener("click", () => {
-  guessBtn.disabled = false;
-  hintBtn.disabled = false;
-  startGame();
+
+guessInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") checkGuess();
 });
+
+/* =========================
+   START
+========================= */
 
 startGame();
