@@ -124,9 +124,12 @@ async function sendScore() {
 
 async function loadLeaderboard() {
   try {
-    // Richiesta a Supabase filtrando direttamente per la data "YYYY-MM-DD"
+    // today nel formato YYYY-MM-DD
+    const todayDate = new Date().toISOString().slice(0, 10);
+
+    // Richiesta Supabase filtrando per oggi
     const res = await fetch(
-      `${SUPABASE_URL}/rest/v1/scores?select=nickname,score,date&date=eq.${today}&order=score.desc&limit=10`,
+      `${SUPABASE_URL}/rest/v1/scores?select=nickname,score,date&date=eq.${todayDate}&order=score.desc&limit=10`,
       {
         method: "GET",
         headers: {
