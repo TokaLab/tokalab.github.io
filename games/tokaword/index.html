@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fusion Guess</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="game">
+
+    <h1>Fusion Guess</h1>
+
+    <div id="category" class="category"></div>
+
+    <div id="maskedWord" class="masked-word">_ _ _ _ _</div>
+
+    <div class="controls">
+      <input
+        type="text"
+        id="guessInput"
+        placeholder="Scrivi la parola"
+        autocomplete="off"
+      />
+      <button id="guessBtn">Indovina</button>
+    </div>
+
+    <div class="hints">
+      <button id="hintBtn">Suggerimento</button>
+      <ul id="hintList"></ul>
+    </div>
+
+    <div class="status">
+      <p>Punteggio: <span id="score">100</span></p>
+      <p>Errori: <span id="attempts">0</span></p>
+    </div>
+
+    <div id="message" class="message"></div>
+
+    <button id="restartBtn" class="hidden">Nuova parola</button>
+
+  </main>
+
+  <script type="module" src="js/game.js"></script>
+</body>
+</html>
