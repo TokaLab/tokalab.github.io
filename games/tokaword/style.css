@@ -81,7 +81,7 @@ h1 {
 }
 
 .modal-content {
-  background: white;
+  background: #33415c;
   padding: 20px;
   border-radius: 12px;
   width: 90%;
@@ -102,8 +102,8 @@ h1 {
   padding: 0.6rem 1.2rem;
   font-size: 1rem;
   border-radius: 8px;
-  background-color: #1c2541;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #33415c;
   border: none;
   cursor: pointer;
   z-index: 10000;
