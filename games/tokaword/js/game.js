@@ -187,8 +187,21 @@ function endGame(success) {
   sendScore();
 }
 
-
 async function sendScore() {
+  if (!playerId || !nickname || score == null) {
+    console.warn("Dati non validi, skip invio", { playerId, nickname, score });
+    return;
+  }
+
+  const payload = {
+    player_id: String(playerId),
+    nickname: String(nickname),
+    score: Number(score),
+    date: today // dovrebbe essere "YYYY-MM-DD"
+  };
+
+  console.log("Sto inviando score", payload);
+
   try {
     const res = await fetch(`${SUPABASE_URL}/rest/v1/scores`, {
       method: "POST",
@@ -198,16 +211,13 @@ async function sendScore() {
         "Content-Type": "application/json",
         "Prefer": "return=minimal"
       },
-      body: JSON.stringify({
-        player_id: playerId,
-        nickname,
-        score,
-        date: today
-      })
+      body: JSON.stringify(payload)
     });
 
+    console.log("Response status:", res.status);
+
     if (!res.ok) {
-      console.warn("Score già inviato o errore");
+      console.warn("Score già inviato o errore", await res.text());
     }
   } catch (err) {
     console.error("Errore invio score", err);
