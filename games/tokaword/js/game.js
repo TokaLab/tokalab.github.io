@@ -44,6 +44,7 @@ function getWordOfTheDay() {
 }
 
 function startGame() {
+  loadLeaderboard();
   const playedToday = localStorage.getItem("playedToday");
   if (playedToday === today) lockGame();
   currentWord = getWordOfTheDay();
@@ -123,8 +124,11 @@ async function sendScore() {
 }
 
 async function loadLeaderboard() {
+  console.log("Carico la leaderboard");
   try {
     const todayDate = new Date().toISOString().slice(0, 10);
+    
+    console.log(todayDate);
 
     // Prendi tutti i punteggi (o almeno gli ultimi 100)
     const res = await fetch(
@@ -137,6 +141,8 @@ async function loadLeaderboard() {
         }
       }
     );
+
+    console.log(res);
 
     if (!res.ok) {
       const text = await res.text();
