@@ -154,7 +154,7 @@ async function loadLeaderboard() {
     leaderboardList.innerHTML = "";
 
     if (todayScores.length === 0) {
-      leaderboardList.innerHTML = "<li>Nessun punteggio oggi</li>";
+      leaderboardList.innerHTML = "<li>Nessun punteggio oggi aggiornato</li>";
     } else {
       todayScores.forEach(entry => {
         const li = document.createElement("li");
