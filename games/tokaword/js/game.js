@@ -185,6 +185,8 @@ function endGame(success) {
   // QUI più avanti:
   // invio punteggio a Supabase
   sendScore();
+
+  loadLeaderboard();
 }
 
 async function sendScore() {
@@ -224,6 +226,42 @@ async function sendScore() {
   }
 }
 
+async function loadLeaderboard() {
+  try {
+    const res = await fetch(`${SUPABASE_URL}/rest/v1/scores?select=nickname,score,play_date&play_date=eq.${today}&order=score.desc&limit=10`, {
+      method: "GET",
+      headers: {
+        "apikey": SUPABASE_KEY,
+        "Authorization": `Bearer ${SUPABASE_KEY}`
+      }
+    });
+
+    if (!res.ok) {
+      console.warn("Errore caricamento classifica", await res.text());
+      return;
+    }
+
+    const data = await res.json();
+    leaderboardList.innerHTML = "";
+
+    if (data.length === 0) {
+      leaderboardList.innerHTML = "<li>Nessun punteggio oggi</li>";
+      return;
+    }
+
+    data.forEach(entry => {
+      const li = document.createElement("li");
+      li.textContent = `${entry.nickname}: ${entry.score}`;
+      leaderboardList.appendChild(li);
+    });
+
+    showLeaderboardBtn.classList.remove("hidden");
+
+  } catch (err) {
+    console.error("Errore loadLeaderboard", err);
+  }
+}
+
 /* =========================
    EVENTI
 ========================= */
@@ -240,3 +278,19 @@ guessInput.addEventListener("keydown", (e) => {
 ========================= */
 
 startGame();
+
+// ELEMENTI MODALE
+const leaderboardModal = document.getElementById("leaderboardModal");
+const closeLeaderboard = document.getElementById("closeLeaderboard");
+const leaderboardList = document.getElementById("leaderboardList");
+const showLeaderboardBtn = document.getElementById("showLeaderboardBtn");
+
+// APRI modale
+showLeaderboardBtn.addEventListener("click", () => {
+  leaderboardModal.classList.remove("hidden");
+});
+
+// CHIUDI modale
+closeLeaderboard.addEventListener("click", () => {
+  leaderboardModal.classList.add("hidden");
+});
