@@ -124,13 +124,9 @@ async function sendScore() {
 
 async function loadLeaderboard() {
   try {
-    // Definisci inizio e fine giornata
-    const startOfDay = today + "T00:00:00";
-    const endOfDay   = today + "T23:59:59";
-
-    // Richiesta a Supabase filtrando per intervallo di oggi
+    // Richiesta a Supabase filtrando direttamente per la data "YYYY-MM-DD"
     const res = await fetch(
-      `${SUPABASE_URL}/rest/v1/scores?select=nickname,score,date&date=gte.${startOfDay}&date=lte.${endOfDay}&order=score.desc&limit=10`,
+      `${SUPABASE_URL}/rest/v1/scores?select=nickname,score,date&date=eq.${today}&order=score.desc&limit=10`,
       {
         method: "GET",
         headers: {
@@ -161,7 +157,7 @@ async function loadLeaderboard() {
       });
     }
 
-    // Mostra sempre il pulsante per aprire la leaderboard
+    // Mostra sempre il pulsante
     showLeaderboardBtn.classList.remove("hidden");
 
   } catch (err) {
