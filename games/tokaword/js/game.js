@@ -237,7 +237,10 @@ async function loadLeaderboard() {
     });
 
     if (!res.ok) {
-      console.warn("Errore caricamento classifica", await res.text());
+      const text = await res.text();
+      console.warn("Errore caricamento classifica", text);
+      leaderboardList.innerHTML = "<li>Errore nel caricamento</li>";
+      showLeaderboardBtn.classList.remove("hidden");
       return;
     }
 
@@ -246,21 +249,24 @@ async function loadLeaderboard() {
 
     if (data.length === 0) {
       leaderboardList.innerHTML = "<li>Nessun punteggio oggi</li>";
-      return;
+    } else {
+      data.forEach(entry => {
+        const li = document.createElement("li");
+        li.textContent = `${entry.nickname}: ${entry.score}`;
+        leaderboardList.appendChild(li);
+      });
     }
 
-    data.forEach(entry => {
-      const li = document.createElement("li");
-      li.textContent = `${entry.nickname}: ${entry.score}`;
-      leaderboardList.appendChild(li);
-    });
-
+    // Mostra il pulsante sempre, anche se non ci sono punteggi
     showLeaderboardBtn.classList.remove("hidden");
 
   } catch (err) {
     console.error("Errore loadLeaderboard", err);
+    leaderboardList.innerHTML = "<li>Errore nel caricamento</li>";
+    showLeaderboardBtn.classList.remove("hidden");
   }
 }
+
 
 /* =========================
    EVENTI
