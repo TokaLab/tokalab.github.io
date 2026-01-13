@@ -4,7 +4,7 @@
   "cards": [
     {
       "word": "NBI - Neutral Beam Injector",
-      "description": "Description text, not over 20 words",
+      "description": " Device that heats plasma by injecting high-energy neutral atoms into tokamaks. ",
       "forbidden": [
         "Heatings",
         "Accelerator",
@@ -15,7 +15,7 @@
     },
     {
       "word": "Density Limit",
-      "description": "Description text, not over 20 words",
+      "description": " Maximum plasma density achievable before disruptive instabilities occur.",
       "forbidden": [
         "Greenwald",
         "Disruption",
@@ -26,7 +26,7 @@
     },
     {
       "word": "Divertor Tokamak Test - DTT",
-      "description": "Description text, not over 20 words",
+      "description": " Italian experimental fusion device designed to study power exhaust solutions.",
       "forbidden": [
         "Frascati",
         "ENEA",
@@ -37,7 +37,7 @@
     },
     {
       "word": "Plasma Frequency",
-      "description": "Description text, not over 20 words",
+      "description": " Natural oscillation rate of electrons in plasma when displaced from ions.",
       "forbidden": [
         "Electron density",
         "Electromagnetic vawe",
@@ -48,7 +48,7 @@
     },
     {
       "word": "Q factor",
-      "description": "Description text, not over 20 words",
+      "description": " Fusion energy gain ratio comparing output power to input heating power.",
       "forbidden": [
         "Energy",
         "Record",
@@ -59,7 +59,7 @@
     },
     {
       "word": "Plasma",
-      "description": "Description text, not over 20 words",
+      "description": " Fourth state of matter consisting of ionized gas with charged particles. ",
       "forbidden": [
         "Gas",
         "Ionised",
@@ -70,7 +70,7 @@
     },
     {
       "word": "Thomson scattering",
-      "description": "Description text, not over 20 words",
+      "description": "Laser diagnostic measuring electron density and temperature in plasmas.",
       "forbidden": [
         "Electron",
         "Density",
@@ -81,7 +81,7 @@
     },
     {
       "word": "Divertor",
-      "description": "Description text, not over 20 words",
+      "description": " Component handling heat and particle exhaust in magnetic fusion devices. ",
       "forbidden": [
         "Heat exhaust",
         "Thermal Flux",
@@ -92,7 +92,7 @@
     },
     {
       "word": "Plasma Facing Component",
-      "description": "Description text, not over 20 words",
+      "description": " Materials and structures directly interacting with hot fusion plasma. ",
       "forbidden": [
         "First wall",
         "Heat loads",
@@ -103,7 +103,7 @@
     },
     {
       "word": "TCV",
-      "description": "Description text, not over 20 words",
+      "description": " Swiss tokamak known for plasma shaping studies and fusion research. ",
       "forbidden": [
         "Switzerland",
         "Lausanne",
@@ -114,7 +114,7 @@
     },
     {
       "word": "Fusion",
-      "description": "Description text, not over 20 words",
+      "description": " Nuclear process combining light atomic nuclei to release massive energy. ",
       "forbidden": [
         "Sun",
         "Tritium",
@@ -125,7 +125,7 @@
     },
     {
       "word": "Debye's length",
-      "description": "Description text, not over 20 words",
+      "description": "Characteristic distance over which electric fields are screened in plasma. ",
       "forbidden": [
         "Plasma",
         "Neutral",
@@ -136,7 +136,7 @@
     },
     {
       "word": "ECRH",
-      "description": "Description text, not over 20 words",
+      "description": "Characteristic distance over which electric fields are screened in plasma. ",
       "forbidden": [
         "Radiowave",
         "Gyrotrons",
@@ -147,7 +147,7 @@
     },
     {
       "word": "Interferometer",
-      "description": "Description text, not over 20 words",
+      "description": " Diagnostic using laser interference to measure plasma electron density. ",
       "forbidden": [
         "Diagnostic",
         "Refractive index",
@@ -158,7 +158,7 @@
     },
     {
       "word": "Neutron",
-      "description": "Description text, not over 20 words",
+      "description": " Neutral subatomic particle produced in fusion reactions of deuterium and tritium. ",
       "forbidden": [
         "Detector",
         "Nucleus",
@@ -169,7 +169,7 @@
     },
     {
       "word": "Scrape Off Layer",
-      "description": "Description text, not over 20 words",
+      "description": " Edge plasma region between last closed flux surface and vessel wall. ",
       "forbidden": [
         "Neutrals",
         "Separatrix",
@@ -180,7 +180,7 @@
     },
     {
       "word": "Tritium",
-      "description": "Description text, not over 20 words",
+      "description": " Radioactive hydrogen isotope used with deuterium as fusion fuel. ",
       "forbidden": [
         "Isotope",
         "Hidrogen",
@@ -191,7 +191,7 @@
     },
     {
       "word": "Cross Section",
-      "description": "Description text, not over 20 words",
+      "description": " Probability measure for nuclear fusion reactions between atomic nuclei. ",
       "forbidden": [
         "Probability",
         "Frequency",
@@ -202,7 +202,7 @@
     },
     {
       "word": "Lawson Criterium",
-      "description": "Description text, not over 20 words",
+      "description": "  Condition for fusion energy breakeven balancing density, temperature, and confinement. ",
       "forbidden": [
         "Temperature",
         "Density",
@@ -213,7 +213,7 @@
     },
     {
       "word": "Stellarator",
-      "description": "Description text, not over 20 words",
+      "description": " Twisted magnetic confinement device for plasma without need for current drive. ",
       "forbidden": [
         "Tokamak",
         "Symmetric",
@@ -224,7 +224,7 @@
     },
     {
       "word": "Deuterio",
-      "description": "Description text, not over 20 words",
+      "description": " Stable heavy hydrogen isotope used as primary fuel for fusion reactions. ",
       "forbidden": [
         "Isotope",
         "Hydrogen",
@@ -235,7 +235,7 @@
     },
     {
       "word": "Breeding Blanket",
-      "description": "Description text, not over 20 words",
+      "description": " Reactor component producing tritium fuel from neutron interactions with lithium. ",
       "forbidden": [
         "Fuel Cycle",
         "Neutrons",
@@ -246,7 +246,7 @@
     },
     {
       "word": "Solov'ev solution",
-      "description": "Description text, not over 20 words",
+      "description": " Analytical solution to Grad-Shafranov equation for tokamak plasma equilibrium. ",
       "forbidden": [
         "Grad-Shafranov ",
         "Magnetic Flux",
@@ -257,7 +257,7 @@
     },
     {
       "word": "Saddle Coils",
-      "description": "Description text, not over 20 words",
+      "description": " Large magnetic coils used for plasma control and instability suppression. ",
       "forbidden": [
         "Diagnostic",
         "Measurements",
@@ -268,7 +268,7 @@
     },
     {
       "word": "Mirnov Coils",
-      "description": "Description text, not over 20 words",
+      "description": " Fast magnetic probes measuring plasma instabilities and MHD oscillations. ",
       "forbidden": [
         "Diagnostic",
         "Measurements",
@@ -279,7 +279,7 @@
     },
     {
       "word": "Superconductivity",
-      "description": "Description text, not over 20 words",
+      "description": " Zero-resistance state enabling powerful magnets for plasma confinement. ",
       "forbidden": [
         "Magnetism",
         "Criogeny",
@@ -290,7 +290,7 @@
     },
     {
       "word": "TokaLab",
-      "description": "Description text, not over 20 words",
+      "description": " Virtual educational platform for learning tokamak physics and operations. ",
       "forbidden": [
         "Open Access",
         "Virtual",
@@ -301,7 +301,7 @@
     },
     {
       "word": "JT-60SA",
-      "description": "Description text, not over 20 words",
+      "description": " World's largest superconducting tokamak in Japan for fusion research. ",
       "forbidden": [
         "Japan",
         "NAKA",
@@ -312,7 +312,7 @@
     },
     {
       "word": "Tokamak",
-      "description": "Description text, not over 20 words",
+      "description": " Toroidal device using magnetic fields to confine plasma for fusion research. ",
       "forbidden": [
         "Plasma",
         "Magnetic Confinement",
@@ -323,7 +323,7 @@
     },
     {
       "word": "Remote Handling",
-      "description": "Description text, not over 20 words",
+      "description": " Robotic systems maintaining fusion reactors in hazardous radioactive environments. ",
       "forbidden": [
         "Robot",
         "Control",
@@ -334,7 +334,7 @@
     },
     {
       "word": "Disruption",
-      "description": "Description text, not over 20 words",
+      "description": "D Sudden plasma termination causing massive heat loads and electromagnetic forces. ",
       "forbidden": [
         "Anomaly",
         "MHD",
@@ -342,6 +342,172 @@
         "Ramp Down",
         "Instability"
       ]
-    }
+    },
+    {
+    "word": "H-mode",
+    "description": "High confinement plasma regime characterized by reduced turbulence and improved energy confinement.",
+    "forbidden": [
+      "L-mode",
+      "Edge",
+      "Pedestal",
+      "Transport",
+      "Turbulence"
+    ]
+  },
+  {
+    "word": "L-mode",
+    "description": "Low confinement operational regime of tokamak plasmas with higher transport losses.",
+    "forbidden": [
+      "H-mode",
+      "Confinement",
+      "Transport",
+      "Edge",
+      "Turbulence"
+    ]
+  },
+  {
+    "word": "Pedestal",
+    "description": "Steep pressure gradient region at the plasma edge in H-mode operation.",
+    "forbidden": [
+      "Edge",
+      "H-mode",
+      "Pressure",
+      "Gradient",
+      "Transport"
+    ]
+  },
+  {
+    "word": "Edge Localized Mode",
+    "description": "Instability occurring at the plasma edge in H-mode, causing periodic energy losses.",
+    "forbidden": [
+      "Instability",
+      "Edge",
+      "H-mode",
+      "Burst",
+      "Divertor"
+    ]
+  },
+  {
+    "word": "Bootstrap Current",
+    "description": "Self-generated plasma current driven by pressure gradients and particle collisions.",
+    "forbidden": [
+      "Current",
+      "Pressure",
+      "Gradient",
+      "Neoclassical",
+      "Tokamak"
+    ]
+  },
+  {
+    "word": "Neoclassical Transport",
+    "description": "Plasma transport driven by particle collisions in toroidal magnetic geometry.",
+    "forbidden": [
+      "Collisions",
+      "Transport",
+      "Classical",
+      "Tokamak",
+      "Particles"
+    ]
+  },
+  {
+    "word": "Safety Factor",
+    "description": "Parameter describing how magnetic field lines wind around the tokamak torus.",
+    "forbidden": [
+      "Magnetic",
+      "Field lines",
+      "Stability",
+      "Tokamak",
+      "Toroidal"
+    ]
+  },
+  {
+    "word": "Magnetic Island",
+    "description": "Localized magnetic structure caused by tearing instabilities in confined plasmas.",
+    "forbidden": [
+      "Instability",
+      "Tearing",
+      "Magnetic field",
+      "Island",
+      "Reconnection"
+    ]
+  },
+  {
+    "word": "Magnetic Reconnection",
+    "description": "Process where magnetic field lines break and reconnect, releasing stored energy.",
+    "forbidden": [
+      "Field lines",
+      "Energy",
+      "Topology",
+      "Instability",
+      "Plasma"
+    ]
+  },
+  {
+    "word": "Alfven Wave",
+    "description": "Magnetohydrodynamic wave propagating along magnetic field lines in plasma.",
+    "forbidden": [
+      "Wave",
+      "Magnetic field",
+      "Plasma",
+      "Velocity",
+      "MHD"
+    ]
+  },
+  {
+    "word": "Plasma Beta",
+    "description": "Ratio between plasma pressure and magnetic pressure in confinement devices.",
+    "forbidden": [
+      "Pressure",
+      "Magnetic",
+      "Ratio",
+      "Stability",
+      "Tokamak"
+    ]
+  },
+  {
+    "word": "First Wall",
+    "description": "Inner surface of a fusion reactor vessel directly facing the confined plasma.",
+    "forbidden": [
+      "Plasma",
+      "Vessel",
+      "Materials",
+      "Heat",
+      "Neutrons"
+    ]
+  },
+  {
+    "word": "Plasma Detachment",
+    "description": "Operational regime where heat and particle fluxes to the divertor are strongly reduced.",
+    "forbidden": [
+      "Divertor",
+      "Heat",
+      "Exhaust",
+      "Neutrals",
+      "Edge"
+    ]
+  },
+  {
+    "word": "ICRH",
+    "description": "Plasma heating technique using ion cyclotron resonance with radiofrequency waves.",
+    "forbidden": [
+      "Radiofrequency",
+      "Heating",
+      "Ions",
+      "Resonance",
+      "Antenna"
+    ]
+  },
+  {
+    "word": "Runaway Electrons",
+    "description": "Highly energetic electrons accelerated during disruptions that may damage reactor walls.",
+    "forbidden": [
+      "Electrons",
+      "Disruption",
+      "Energy",
+      "Damage",
+      "Acceleration"
+    ]
+  }
+
   ]
 }
