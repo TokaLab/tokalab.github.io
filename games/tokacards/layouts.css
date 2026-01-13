@@ -27,7 +27,7 @@
   left: 50%;
   transform: translateX(-50%);
   width: 80%;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 #card.mode-forbidden .forbidden-list {
@@ -46,7 +46,7 @@
 }
 
 #card.mode-forbidden .forbidden-list li {
-  margin-bottom: 1em;   /* ≈ 2 × font-size */
+  margin-bottom: 0.5em;   /* ≈ 2 × font-size */
   line-height: 1.1;
 }
 
