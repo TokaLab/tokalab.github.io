@@ -32,7 +32,7 @@
 
 #card.mode-forbidden .forbidden-list {
   
-  display: flex;
+  display: block;
   position: absolute;
   top: 42%;
   left: 50%;
