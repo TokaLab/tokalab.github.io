@@ -31,6 +31,8 @@
 }
 
 #card.mode-forbidden .forbidden-list {
+  
+  display: flex;
   position: absolute;
   top: 42%;
   left: 50%;
@@ -46,11 +48,126 @@
 }
 
 #card.mode-forbidden .forbidden-list li {
+   /* visibile solo in modalità forbidden */
   margin-bottom: 1.1em;   /* ≈ 2 × font-size */
   line-height: 1.1;
 }
 
 #card.mode-forbidden .layer {
+  color: white;           /* colore bianco */
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);  /* opzione: ombra per leggibilità */
+}
+
+#card.mode-mimic .word {
+  position: absolute;
+  top: 3.5%;                /* punto di riferimento verticale */
+  left: 50%;              /* centro orizzontale */
+  transform: translateX(-50%); /* centra il layer orizzontalmente */
+  
+  width: 90%;             /* larghezza layer */
+  height: 12%;
+  
+  text-align: center;      /* centra ogni riga */
+  font-size: 28px;
+  font-weight: bold;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centra verticalmente le righe all’interno del layer */
+  text-align: center;      /* centra orizzontalmente le righe */
+
+   /* Gestione wrap intelligente */
+  white-space: normal;        /* permette il wrap normale solo se serve */
+  word-break: keep-all;       /* evita di rompere le parole se c'è spazio */
+  overflow-wrap: break-word;  /* fallback per lunghe parole senza spazi */
+}
+
+#card.mode-mimic .description {
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  font-size: 18px;
+}
+
+#card.mode-mimic .mimic-list {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  font-size: 26px;
+  font-weight: bold;
+}
+
+#card.mode-mimic .mimic-list li {
+  margin-bottom: 1.1em;   /* ≈ 2 × font-size */
+  line-height: 1.1;
+}
+
+#card.mode-mimic .layer {
+  color: white;           /* colore bianco */
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);  /* opzione: ombra per leggibilità */
+}
+
+#card.mode-drawit .word {
+  position: absolute;
+  top: 3.5%;                /* punto di riferimento verticale */
+  left: 50%;              /* centro orizzontale */
+  transform: translateX(-50%); /* centra il layer orizzontalmente */
+  
+  width: 90%;             /* larghezza layer */
+  height: 12%;
+  
+  text-align: center;      /* centra ogni riga */
+  font-size: 28px;
+  font-weight: bold;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centra verticalmente le righe all’interno del layer */
+  text-align: center;      /* centra orizzontalmente le righe */
+
+   /* Gestione wrap intelligente */
+  white-space: normal;        /* permette il wrap normale solo se serve */
+  word-break: keep-all;       /* evita di rompere le parole se c'è spazio */
+  overflow-wrap: break-word;  /* fallback per lunghe parole senza spazi */
+}
+
+#card.mode-drawit .description {
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  font-size: 18px;
+}
+
+#card.mode-drawit .drawit-list {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  font-size: 26px;
+  font-weight: bold;
+}
+
+#card.mode-drawit .drawit-list li {
+  margin-bottom: 1.1em;   /* ≈ 2 × font-size */
+  line-height: 1.1;
+}
+
+#card.mode-drawit .layer {
   color: white;           /* colore bianco */
   text-shadow: 1px 1px 3px rgba(0,0,0,0.7);  /* opzione: ombra per leggibilità */
 }

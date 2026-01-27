@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
 
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,16 +16,35 @@
 
   <div class="game-area">
 
-    <div id="card" class="mode-forbidden">
-      <img id="cardImage" src="images/forbidden.png" alt="Carta">
+    <!-- Mode Selector -->
+    <div id="modeSelector" class="mode-selector">
+      <div class="mode-option">
+        <input type="checkbox" id="modeMimic" value="mimic">
+        <label for="modeMimic">Mimic</label>
+      </div>
+      <div class="mode-option">
+        <input type="checkbox" id="modeForbidden" value="forbidden">
+        <label for="modeForbidden">Forbidden</label>
+      </div>
+      <div class="mode-option">
+        <input type="checkbox" id="modeDrawIt" value="drawit">
+        <label for="modeDrawIt">DrawIt</label>
+      </div>
+    </div>
 
-      <!-- LAYERS -->
+    <!-- Bottone Start -->
+    <button id="startButton">Start Game</button>
+
+    <!-- Carta -->
+    <div id="card" class="mode-forbidden" style="display:none;">
+      <img id="cardImage" src="images/forbidden.png" alt="Carta">
       <div class="layer word" id="word"></div>
       <div class="layer description" id="description"></div>
       <ul class="layer forbidden-list" id="forbiddenList"></ul>
     </div>
 
-    <button id="drawButton">Draw a New Card</button>
+    <!-- Bottone Draw -->
+    <button id="drawButton" style="display:none;">Draw a New Card</button>
 
   </div>
 
