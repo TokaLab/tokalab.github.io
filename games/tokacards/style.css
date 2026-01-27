@@ -118,9 +118,40 @@ h1 {
 .mode-selector {
   display: flex;
   justify-content: center; /* centra l'intero gruppo */
-  gap: 20px;               /* distanza tra i bottoni */
+  gap: 12px;               /* distanza tra i bottoni */
   margin-bottom: 20px;
-  flex-wrap: wrap;          /* va a capo su schermi piccoli */
+  flex-wrap: wrap;
+}
+
+.mode-option {
+  min-width: 100px;       /* larghezza minima per evitare sovrapposizioni */
+  flex: 1 1 auto;         /* si adatta allo spazio disponibile */
+  display: flex;
+  justify-content: center;
+}
+
+.mode-option label {
+  display: inline-block;
+  width: 100%;
+  padding: 12px 0;
+  text-align: center;
+  font-size: 16px; /* riduci leggermente per mobile */
+  border-radius: 8px;
+  background-color: #eee;
+  border: 2px solid #444;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+@media (max-width: 420px) {
+  .mode-selector {
+    gap: 8px;
+  }
+  .mode-option label {
+    font-size: 14px;
+    padding: 10px 5px;
+  }
 }
 
 .mode-option input[type="checkbox"] {
