@@ -69,6 +69,17 @@
       ]
     },
     {
+      "word": "Burning Plasma",
+      "description": "Sustained fusion state where alpha particles maintain plasma temperature.",
+      "forbidden": [
+        "Fusion",
+        "Alpha",
+        "Sustained",
+        "Heating",
+        "Self"
+      ]
+    },
+    {
       "word": "Calibration",
       "description": "Procedure ensuring accuracy and reliability of fusion diagnostics",
       "forbidden": [
@@ -163,7 +174,7 @@
         " Isotope ",
         " Hydrogen ",
         " Fusion ",
-        " Water ",
+        " Tritium ",
         " Breeding Blanket "
       ]
     },
@@ -358,7 +369,7 @@
       "word": "Impurity Seeding",
       "description": "Injection of impurities to enhance radiation and reduce heat loads.",
       "forbidden": [
-        "Impurities",
+        "Valve",
         "Radiation",
         "Divertor",
         "Cooling",
@@ -616,17 +627,6 @@
         "Ratio",
         "Stability",
         "Field"
-      ]
-    },
-    {
-      "word": "Plasma Burn",
-      "description": "Sustained fusion state where alpha particles maintain plasma temperature.",
-      "forbidden": [
-        "Fusion",
-        "Alpha",
-        "Sustained",
-        "Heating",
-        "Self"
       ]
     },
     {
