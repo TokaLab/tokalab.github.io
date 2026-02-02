@@ -170,7 +170,7 @@ h1 {
 }
 
 .mode-option input[type="checkbox"]:checked + label {
-  background-color: #444;
+  background-color: #076f10;
   color: #fff;
 }
 
@@ -197,6 +197,6 @@ h1 {
 }
 
 .game-button:active {
-  background-color: #444;
+  background-color: #066a0f;
   color: #fff;
 }
