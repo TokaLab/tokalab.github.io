@@ -34,9 +34,9 @@
   
   display: block;
   position: absolute;
-  top: 42%;
+  top: 65%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%,-50%);
   width: 80%;
 
   list-style: none;
@@ -50,7 +50,7 @@
 #card.mode-forbidden .forbidden-list li {
    /* visibile solo in modalità forbidden */
   margin-bottom: 1.1em;   /* ≈ 2 × font-size */
-  line-height: 1.1;
+  line-height: 0.75;
 }
 
 #card.mode-forbidden .layer {
