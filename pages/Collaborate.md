@@ -5,7 +5,6 @@ permalink: /Collaborate/
 ---
 
 # Collaborate
-
 Welcome to our growing community! We are open to collaborating with anyone interested in contributing to our project. There are many ways you can get involved and help us grow:
 
 
@@ -24,6 +23,5 @@ What features or improvements would make our project more useful? Share your ide
 ---
 
 ## Contact Us
-
 If you’re interested in collaborating or have any questions, feel free to reach out to us via email:  
 [tokalab.fusion@gmail.com](mailto:tokalab.fusion@gmail.com)

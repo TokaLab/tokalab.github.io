@@ -6,8 +6,9 @@ permalink: /Others/
 
 ## "Tor Vergata" University of Rome, Computational Laboratory
 
-At the "Tor Vergata" University of Rome the TokaLab team and the professors organised a computational laboratory. See [here](/Others/TorVergataComputationalLaboratory) for details or contact us at tokalab.fusion@gmail.com.
+At the "Tor Vergata" University of Rome the TokaLab team and the professors organised a computational laboratory. See [here](/Others/TorVergataComputationalLaboratory) for details or contact us at [tokalab.fusion@gmail.com].
 
 
+## TokaCards
 
-
+An education fusion card game which can be used for sharing fun time by learning new concepts. See here for details or contact us at [tokalab.fusion@gmail.com].
