@@ -4,8 +4,6 @@ title: TokaCards
 permalink: /Others/TokaCards
 ---
 
-# TokaCards
-
 TokaCards is a fast-paced word-guessing card game inspired by classic party games.
 The goal is simple: help your team guess the target word — but each mode changes the rules and the challenge.
 
