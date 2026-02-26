@@ -11,4 +11,4 @@ At the "Tor Vergata" University of Rome the TokaLab team and the professors orga
 
 ## TokaCards
 
-An education fusion card game which can be used for sharing fun time by learning new concepts. See here for details or contact us at [tokalab.fusion@gmail.com].
+An education fusion card game which can be used for sharing fun time by learning new concepts. See [here](/Others/TokaCards) for details or contact us at [tokalab.fusion@gmail.com](tokalab.fusion@gmail.com).
