@@ -58,6 +58,18 @@ sidebar:
    *Scientific Machine Learning for Real–Time Multi–Diagnostic Data Processing*
    Poster Presentation, **FuseNet PhD event 2025**, 04 - 06 Nov 2025, Aix-en-Provence, France.
 
+13. **N. Rutigliano et al.**
+   *TokaLab: A Modular Virtual Tokamak Laboratory for Education, Open Access, and Algorithm Benchmarking*
+   Poster Presentation, **Conferenza Italiana Plasmi**, 03 - 06 Feb 2026, Frascati, Italy.
+
+14. **R. Rossi et al.**
+   *Solving Plasma Forward and Inverse Problems with Physics-Informed Neural Networks in Nuclear Fusion*
+   Poster Presentation, **Cionferenza Italiana Plasmi**, 03 - 06 Feb 2026, Frascati, Italy.
+
+15. **R.Rossi et al.**
+   *TokaLab: A Modular Virtual Tokamak Laboratory for Education, FAIR Principles, and Algorithm Benchmarking*
+   Oral Presentation, **Open Source Software for Fusion Energy (𝗢𝗦𝗦𝗙𝗘) Conference 2026**, 10 - 12 Mar 2026, München, Germany.
+
 
 
 
